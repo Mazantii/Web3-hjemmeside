@@ -1,44 +1,70 @@
 body{
-    background-color: black;
+    background-color: #dee5e5;
     margin: auto;
 }
 
 /* Classes */
 .meat{
+    display: flex;
+    justify-content: center;
     margin: auto;
-    position: relative;
-    left: 150px;
 }
 .top-container{
     position: absolute;
-    background-color: blue;
-    width: 1208px;
+    background-color: #082D0F;
+    width: 1210px;
     height: 100px;
     margin: auto;
 
 }
 .middle-container{
-    background-color: lightblue;
+    background-color: #17b890;
     position: absolute;
-    display: inline-block;
+    top: 105px;
+
     width: 800px;
     height: 1000px;
     margin: auto;
 }
 .left-container{
-    background-color: gray;
+    background-color: #5e807f;
     position:absolute;
-    display: inline-block;
+    top: 105px;
+    left: 347px;
+
     width: 200px;
     height: 1000px;
     margin: auto;
 
 }
 .right-container{
-    background-color: gray;
+    background-color: #5e807f;
     position:absolute;
-    display: inline-block;
+    top: 105px;
+    right: 346px;
+
     width: 200px;
     height: 1000px;
     margin: auto;
+}
+.image-container{
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px 20px 20px;
+    outline: solid 2px black;
+}
+.add-photo{
+    display: inline-block;
+    position: relative;
+
+    left: 40px;
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px 20px 20px;
+}
+.add-photo:hover{
+    opacity: 0.7;
 }
