@@ -12,15 +12,15 @@ body{
 .top-container{
     position: absolute;
     background-color: #082D0F;
-    width: 1210px;
-    height: 100px;
+    width: 80%;
+    height: 12%;
     margin: auto;
 
 }
 .middle-container{
     background-color: #17b890;
     position: absolute;
-    top: 105px;
+    top: 14%;
 
     width: 800px;
     height: 1000px;
@@ -29,8 +29,8 @@ body{
 .left-container{
     background-color: #5e807f;
     position:absolute;
-    top: 105px;
-    left: 347px;
+    top: 14%;
+    left: 10%;
 
     width: 200px;
     height: 1000px;
@@ -40,8 +40,8 @@ body{
 .right-container{
     background-color: #5e807f;
     position:absolute;
-    top: 105px;
-    right: 346px;
+    top: 14%;
+    right: 10%;
 
     width: 200px;
     height: 1000px;
