@@ -1,0 +1,61 @@
+body{
+    background-color: #dee5e5;
+    margin: auto;
+}
+
+/* Classes */
+.meat{
+    display: flex;
+}
+
+.meat div{
+    flex: 1 1 auto;
+}
+.top-container{
+    display: flex 1;
+    background-color: #082D0F;
+    height: 100px;
+    width: 1500px;
+    margin: auto;
+
+}
+.middle-container{
+    background-color: #17b890;
+    width: 1000px;
+
+    margin: auto;
+}
+.left-container{
+    background-color: #5e807f;
+    height: 1000px;
+    width: 250px;
+
+    margin: auto;
+
+}
+.right-container{
+    background-color: #5e807f;
+    width: 250px;
+    height: 1000px;
+
+    margin: auto;
+}
+.image-container{
+    display: flex 1;
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px 20px 20px;
+    outline: solid 2px black;
+}
+.add-photo{
+    display: inline-block;
+    position: relative;
+
+    left: 40px;
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px 20px 20px;
+}
+.add-photo:hover{
+    opacity: 0.7;
+}
