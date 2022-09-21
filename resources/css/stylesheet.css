@@ -1,18 +1,28 @@
 * {
     box-sizing: border-box; 
    }
-   body {
+body {
      margin: 0;
    }
 
-  header, footer {
+header, footer {
+    display: flex;
     background: yellowgreen;
     height: 10vh;
   }
 
+  header > headermiddle,
+  header > headerleft,
+  header > headerright{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 5px;
+}
+
   
      /* CLASSES */
-  .image-container{
+.image-container{
     flex: 0 0 10vh;
     width: 262px;
     height: 262px;
@@ -21,16 +31,6 @@
     outline: solid 2px black;
 }
 
-.add-photo{
-    flex: 0 0 10vh;
-
-    width: 262px;
-    height: 262px;
-    margin: 10px;
-}
-.add-photo:hover{
-    opacity: 0.7;
-}
 
    /* ID'S */
    #main {
@@ -48,4 +48,24 @@
    #main > vreklame {
      order: -1;
    }
+
+   #header > login{
+    display: flex;
+    flex: 1;
+    width: 550px;
+    height: 25px;
+
+    align-items: center;
+}
+
+#add-photo{
+    flex: 0 0 10vh;
+
+    width: 262px;
+    height: 262px;
+    margin: 10px;
+}
+#add-photo:hover{
+    opacity: 0.7;
+}
 
