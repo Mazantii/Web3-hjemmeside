@@ -7,6 +7,7 @@ function AddPicture(e){
 
     newPicture.setAttribute("class", "image-container");
     newPicture.setAttribute("src", "/resources/images/middle container/vman stats.png");
+    newPicture.setAttribute("onclick", "DeletePicture()");
     e.parentNode.appendChild(newPicture);
     e.parentNode.insertBefore(newPicture, e);
     }
@@ -16,7 +17,19 @@ function AddPicture(e){
 
 }   
 
-function LoggedIn(){
+function DeletePicture(e){
+    if(loggedIn === true){
+        //alert("Do you really want to delete this?")
+        
+    }
+}
+
+function Logout(){
+    loggedIn = false;
+    alert("You have been logged out!");
+}
+
+function LogIn(){
     loggedIn = true;
 }
 

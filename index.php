@@ -13,10 +13,11 @@
     <headermiddle>
       <form class="login" action="index.php" method ="POST">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
+        <input type="text" id="username" name="username"> <br>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        <input type="submit" value="Submit">
+        <input type="password" id="password" name="password"> <br>
+        <input type="submit" value="Login">
+        <input onclick="Logout()" type="button" value="logout">
      </form>
 
     </headermiddle>
@@ -26,7 +27,7 @@
   <div id="main">
     <middle>
 
-      <img class="image-container" src="/resources/images/middle container/vman stats.png" alt="Picture for main container">
+      <img onclick="DeletePicture(this)" class="image-container" src="/resources/images/middle container/vman stats.png" alt="Picture">
 
       <input onclick="AddPicture(this)" id="add-photo" type="image" src="/resources/images/middle container/plus sign.png" name="Add picture">
 
@@ -44,7 +45,7 @@
       $password = $_POST["password"];
 
         if($username == "john"){
-          echo '<script>LoggedIn();</script>';
+          echo '<script>LogIn();</script>';
         }
         ?>
 </body>
