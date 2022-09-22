@@ -19,6 +19,7 @@
         <input type="submit" value="Login">
         <input onclick="Logout()" type="button" value="logout">
      </form>
+     <p><a href="create.php">Create Account </a></p>
 
     </headermiddle>
     <headerright>
@@ -27,9 +28,13 @@
   <div id="main">
     <middle>
 
-      <img onclick="DeletePicture(this)" class="image-container" src="/resources/images/middle container/vman stats.png" alt="Picture">
+      <input id="add-photo" type="file"  accept="image/*" onchange="AddPicture(this)" name="Add picture">
 
-      <input onclick="AddPicture(this)" id="add-photo" type="image" src="/resources/images/middle container/plus sign.png" name="Add picture">
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        Select image to upload:
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload Image" name="submit">
+      </form>
 
 
     </middle>
@@ -47,6 +52,6 @@
         if($username == "john"){
           echo '<script>LogIn();</script>';
         }
-        ?>
+  ?>
 </body>
 </html>
