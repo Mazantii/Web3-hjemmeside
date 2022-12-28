@@ -44,7 +44,7 @@
   <footer>Footer</footer>
   <script src="/resources/javascript/javascript.js"></script>
 
-  <!-- PHP for checking if user is logged in, and enabeling the appear script if so --!>
+  <!-- PHP for checking if user is logged in, and enabeling the appear script if so -->
   <?php
       $username = $_POST["username"];
       $password = $_POST["password"];
